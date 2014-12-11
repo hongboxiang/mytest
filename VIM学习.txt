@@ -1,0 +1,6 @@
+vim学习笔记：
+在windows下安装gvim7.3
+参照http://blog.csdn.net/niushuai666/article/details/7275406
+学习第一级-基本操作
+参考http://blog.csdn.net/chenyongsuda/article/details/6004575
+了解下各个功能

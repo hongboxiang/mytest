@@ -1,0 +1,4 @@
+github学习：
+下载msysgit和tortoise安装git和图形界面
+参考http://blog.csdn.net/ethan_xue/article/details/7749639
+
