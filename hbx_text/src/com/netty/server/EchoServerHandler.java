@@ -12,6 +12,7 @@ import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.util.CharsetUtil;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Scanner;
 
 /**
  * Sharable表示此对象在channel间共享
@@ -26,7 +27,8 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter{
         String recieved = getMessage(buf);
         System.out.println("服务器接收到消息：" + recieved);
         try {
-            ctx.writeAndFlush(getSendByteBuf("APPLE"));
+            Scanner scanner = new Scanner(System.in);
+            ctx.writeAndFlush(getSendByteBuf(scanner.next()));
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

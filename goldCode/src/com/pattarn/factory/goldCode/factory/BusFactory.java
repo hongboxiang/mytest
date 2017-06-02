@@ -14,7 +14,8 @@ import java.util.Random;
 public class BusFactory extends MachineFactory{
     @Override
     public List<Machine> create(int sum) {
-        List<Machine> busList = new ArrayList<Machine>();
+        List<Machine> busList = new A
+        rrayList<Machine>();
         Random random = new Random();
         for (int index = 0; index < sum; index++) {
             Machine bus = new Bus();

@@ -1,0 +1,8 @@
+**/.sonar/
+**/out/
+*.iws
+*.ipr
+**/*.iml
+**/.idea
+.svn
+*.iml
