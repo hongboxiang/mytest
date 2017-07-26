@@ -1,6 +1,5 @@
 package com.hbx.collection.list;
 
-import org.jdom.Element;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -13,25 +12,28 @@ import java.util.Map;
  */
 public class listTest {
 
-//    public static void main(String[] args) {
-//        Integer a = 1000, b = 1000;
-//        System.out.println(a == b);//1
-//        Integer c = 100, d = 100;
-//        System.out.println(c == d);//2
-//
-//    }
+    private static List<String> ppuIdFDDList;
 
-    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
+    private static List<String> ppuIdTDDList;
 
-        Class cache = Integer.class.getDeclaredClasses()[0]; //1
-        Field myCache = cache.getDeclaredField("cache"); //2
-        myCache.setAccessible(true);//3
+    public static void main(String[] args)  {
+        ppuIdFDDList = new ArrayList<>();
+//        ppuIdFDDList.add("1");
+//        ppuIdFDDList.add("2");
 
-        Integer[] newCache = (Integer[]) myCache.get(cache); //4
-        newCache[132] = newCache[133]; //5
+        ppuIdTDDList = new ArrayList<>();
+//        ppuIdTDDList.add("1");
 
-        int a = 2;
-        int b = a + a;
-        System.out.printf("%d + %d = %d", a, a, b); //
+//        testRetailAll(ppuIdFDDList, ppuIdTDDList);
+
+        System.out.println(ppuIdFDDList.isEmpty());
+        System.out.println(ppuIdTDDList);
+    }
+
+    private static void testRetailAll(List<String> ppuIdFDDList, List<String> ppuIdTDDList) {
+        List<String> ppuIdFTLList = new ArrayList<String>(ppuIdFDDList);
+        ppuIdFDDList.retainAll(ppuIdTDDList);
+        System.out.println("FTL: ");
+        System.out.println(ppuIdFDDList);
     }
 }

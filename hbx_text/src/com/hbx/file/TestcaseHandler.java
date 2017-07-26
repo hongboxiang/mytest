@@ -11,8 +11,7 @@ public class TestcaseHandler {
 			String dir = "D:\\myPlays\\rfTransfer";
 			String outDir = "D:\\myPlays\\rfTransfer.txt";
 			File file = new File(dir);
-			FileWriter fw = new FileWriter(outDir);
-			BufferedWriter bufferedWriter = new BufferedWriter(fw);
+			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outDir));
 			for (String sf:file.list()) {
 				InputStreamReader inputFileReader = new InputStreamReader(new FileInputStream(dir + File.separator + sf), "UTF-8");
 				BufferedReader bufferedReader = new BufferedReader(inputFileReader);
