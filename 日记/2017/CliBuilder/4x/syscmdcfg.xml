@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<sys version="100" cliversion="V3.0.1">
+    <syscmd code="0000100">
+        <param ID="1301" name="NEID"/>
+        <param ID="2301" name="SYSTIME"/>
+    </syscmd>
+</sys>

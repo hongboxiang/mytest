@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<server>
+	<command-list i18n-file="n-minos4x-icm-mml-cmdinfo-i18n.xml" module-key="N-MINOS4X-ICM-mml">
+		<command code="8203097" pseudocode="" desc-key="N-MINOS4X-ICM-CmdNote-8203097-Func" service-name="" version="V1.0" operation="global.operation"/>
+	</command-list>
+</server>

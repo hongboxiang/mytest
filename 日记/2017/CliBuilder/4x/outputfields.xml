@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ini文件转换的格式描述-->
+<root>
+	<outputfields>	   	
+		<datainfo>
+			<xmlsection>field</xmlsection>
+			<much>true</much>
+			<much_ininame>Num</much_ininame>
+			<much_section>DB_RelaTable</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>			
+			<param>
+				<keyname>id</keyname>
+				<ininame>Num</ininame>
+				<section>DB_RelaTable</section>	
+				<handle>ID</handle>	
+				<must>true</must>		
+			</param>
+			<param>
+				<keyname>name</keyname>
+				<ininame>FldName</ininame>
+				<section>DB_RelaTable</section>	
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>type</keyname>
+				<ininame>FldType</ininame>
+				<section>DB_RelaTable</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>length</keyname>
+				<ininame>FldLen</ininame>
+				<section>DB_RelaTable</section>	
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>offset</keyname>
+				<ininame>ShowIdx</ininame>
+				<section>DB_RelaTable</section>	
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>isloop</keyname>
+				<ininame>Loop</ininame>
+				<section>DB_RelaTable</section>	
+				<must>true</must>
+			</param>			
+		</datainfo>
+	</outputfields>
+</root>
+

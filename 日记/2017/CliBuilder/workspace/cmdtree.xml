@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+    <module id="8203" name="集中配置" namee="ICM" html="" icon="">
+        <module id="82030" name="无线配置应用" namee="Common Wireless Configuration Application" html="" icon="">
+            <command code="8203097" name="GET NBRX2ORS1" note="EMS查询X2Link" notee="EMS Query X2Link" html="" icon="" visible="1" enabled="1" netype="9223372036854775807" modetypeid=""/>
+        </module>
+    </module>
+</root>

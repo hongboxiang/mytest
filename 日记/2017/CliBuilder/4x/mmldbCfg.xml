@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ini文件转换的格式描述-->
+<command>
+	<basic>
+		<baseinfo>
+			<xmlsection>Basic</xmlsection>
+			<much>false</much>
+			<!--much true 时的结果取值   much_ininame代表取值字段 much_section代表取值片区 much_handle代表处理方式-->
+			<much_ininame>No</much_ininame>
+			<much_section>InParam</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>
+			<param>
+				<keyname>code</keyname>
+				<must>true</must>
+				<ininame>CmdNo</ininame>
+				<section>Basic</section>
+				<much>false</much>
+				<!--属性Attribute还是实体entitie-->
+				<nodetype>Attribute</nodetype>
+				<!--正常、连接、求和  连接和求和与much=true有关-->
+				<handle>normal</handle>
+			</param>
+			<param>
+				<keyname>method</keyname>
+				<ininame>MpOpr</ininame>
+				<section>DB_Basic</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>ispcmd</keyname>
+				<ininame>Protocol</ininame>
+				<section>DB_Basic</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>appimp</keyname>
+				<ininame>IsRealize</ininame>
+				<section>Basic</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>appext</keyname>
+				<ininame>IsExpand</ininame>
+				<section>Basic</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>exec_ext</keyname>
+				<!--节点描述 节点名称-->
+				<isNodeDes>true</isNodeDes>
+				<NodeDesFile>execext.xml</NodeDesFile>				
+				<isCreateNode>true</isCreateNode>
+				<InputNodeKey></InputNodeKey>				
+				<ininame>Protocol</ininame>
+				<section>DB_Basic</section>
+			</param>
+			
+			<param>
+				<keyname>dbsql</keyname>
+				<!--节点描述 节点名称-->
+				<isNodeDes>true</isNodeDes>
+				<NodeDesFile>dbsql.xml</NodeDesFile>				
+				<isCreateNode>true</isCreateNode>
+				<InputNodeKey></InputNodeKey>				
+				<ininame>Protocol</ininame>
+				<section>DB_Basic</section>
+			</param>			
+		</baseinfo>
+	</basic>
+	<on_tables>
+		<datainfo>			
+			<xmlsection>table</xmlsection>
+			<much>true</much>
+			<much_ininame>Num</much_ininame>
+			<much_section>DB_RelaTable</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>			
+			<param>
+				<keyname>id</keyname>
+				<ininame>TblName</ininame>
+				<handle>ID</handle>
+				<section>DB_RelaTable</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>name</keyname>
+				<ininame>TblName</ininame>
+				<section>DB_RelaTable</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>operatetype</keyname>
+				<ininame>OprType</ininame>
+				<section>DB_RelaTable</section>
+				<must>true</must>
+			</param>
+			<param>
+				<keyname>isbat</keyname>
+				<ininame>Batch</ininame>
+				<section>DB_RelaTable</section>
+				<must>true</must>
+			</param>			
+			<param>
+				<keyname>outputfields</keyname>
+				<isNodeDes>true</isNodeDes>
+				<NodeDesFile>outputfields.xml</NodeDesFile>
+				<isCreateNode>false</isCreateNode>
+				<!--关联key处理方式，两种方式(字母＋much数字):associate 字母:value 清空:no-->
+				<associateKeyHandle>associate</associateKeyHandle>
+				<!--关联key，用于判断下一文件-->
+				<associateKey>T</associateKey>							
+				<ininame>Size</ininame>
+				<section>InParam</section>
+			</param>
+		</datainfo>
+	</on_tables>
+</command>

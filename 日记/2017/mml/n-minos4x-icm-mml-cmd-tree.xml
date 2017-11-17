@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root version="V1.0.1000" cliversion="" i18n-file="n-minos4x-icm-mml-cmdtree-i18n.xml">
+	<mode name="N-MINOS4X-ICM-ClsCode-8203-0" html="" icon="">
+		<mode name="N-MINOS4X-ICM-ClsCode-82030-1" html="" icon="">
+			<command code="8203097" name="GET NBRX2ORS1" netypeid="9223372036854775807" modetypeid="" enable="1" visible="1" note="N-MINOS4X-ICM-Code-8203097-2" html="" icon=""/>
+		</mode>
+	</mode>
+</root>

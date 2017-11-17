@@ -1,0 +1,168 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=10820, tid=4592
+#
+# JRE version:  (8.0_91-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.91-b15 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000285a000):  JavaThread "Unknown thread" [_thread_in_vm, id=4592, stack(0x0000000002bd0000,0x0000000002cd0000)]
+
+Stack: [0x0000000002bd0000,0x0000000002cd0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000285a000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4592, stack(0x0000000002bd0000,0x0000000002cd0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000d5580000, 0x00000000d8000000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000d5580000,0x00000000d5626670,0x00000000d7600000)
+  from space 5120K, 0% used [0x00000000d7b00000,0x00000000d7b00000,0x00000000d8000000)
+  to   space 5120K, 0% used [0x00000000d7600000,0x00000000d7600000,0x00000000d7b00000)
+ ParOldGen       total 87552K, used 0K [0x0000000080000000, 0x0000000085580000, 0x00000000d5580000)
+  object space 87552K, 0% used [0x0000000080000000,0x0000000080000000,0x0000000085580000)
+ Metaspace       used 769K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 75K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012090000,0x00000000124a0000] byte_map_base: 0x0000000011c90000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005e132f70
+ Begin Bits: [0x0000000012e60000, 0x0000000014e60000)
+ End Bits:   [0x0000000014e60000, 0x0000000016e60000)
+
+Polling page: 0x0000000001f30000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000002cd0000, 0x0000000002f40000, 0x0000000011cd0000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.124 loading class java/lang/Short
+Event: 0.124 loading class java/lang/Short done
+Event: 0.124 loading class java/lang/Integer
+Event: 0.125 loading class java/lang/Integer done
+Event: 0.125 loading class java/lang/Long
+Event: 0.125 loading class java/lang/Long done
+Event: 0.125 loading class java/lang/NullPointerException
+Event: 0.125 loading class java/lang/NullPointerException done
+Event: 0.125 loading class java/lang/ArithmeticException
+Event: 0.126 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x000000013fb00000 - 0x000000013fb37000 	C:\Program Files\Java\jdk1.8.0_91\bin\java.exe
+0x00000000775e0000 - 0x000000007778a000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000773c0000 - 0x00000000774df000 	C:\Windows\system32\kernel32.dll
+0x000007fefd560000 - 0x000007fefd5ca000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fef8630000 - 0x000007fef872a000 	C:\Windows\system32\winhafnt64.dll
+0x00000000774e0000 - 0x00000000775da000 	C:\Windows\system32\USER32.dll
+0x000007feff3f0000 - 0x000007feff457000 	C:\Windows\system32\GDI32.dll
+0x000007fefdca0000 - 0x000007fefdcae000 	C:\Windows\system32\LPK.dll
+0x000007fefe1b0000 - 0x000007fefe27a000 	C:\Windows\system32\USP10.dll
+0x000007fefe5c0000 - 0x000007fefe65f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefdcb0000 - 0x000007fefdd8b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefdc80000 - 0x000007fefdc9f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefda80000 - 0x000007fefdbad000 	C:\Windows\system32\RPCRT4.dll
+0x000007fefc290000 - 0x000007fefc29c000 	C:\Windows\system32\VERSION.dll
+0x000007fefbb90000 - 0x000007fefbd84000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007feff500000 - 0x000007feff571000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefdbb0000 - 0x000007fefdbde000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe280000 - 0x000007fefe389000 	C:\Windows\system32\MSCTF.dll
+0x000007fefd380000 - 0x000007fefd396000 	c:\progra~2\ztedrm\drmagent\bin64\ftagtctr.dll
+0x000007fefd1f0000 - 0x000007fefd296000 	C:\Windows\system32\MSVCP120.dll
+0x000007fefd100000 - 0x000007fefd1ef000 	C:\Windows\system32\MSVCR120.dll
+0x000007fefd0e0000 - 0x000007fefd100000 	c:\progra~2\ztedrm\drmagent\bin64\ETWDebugApi.dll
+0x000007fefcc30000 - 0x000007fefcc4e000 	c:\progra~2\ztedrm\drmagent\bin64\AgtCommUtil.dll
+0x000007fefb240000 - 0x000007fefb24d000 	c:\progra~2\ztedrm\drmagent\bin64\LocalPol.dll
+0x000007fefb550000 - 0x000007fefb56a000 	c:\progra~2\ztedrm\drmagent\bin64\DsmJsonObj.dll
+0x000007fef98d0000 - 0x000007fef98e2000 	c:\progra~2\ztedrm\drmagent\bin64\PolMgr.dll
+0x000007fef8d40000 - 0x000007fef8d5d000 	c:\progra~2\ztedrm\drmagent\bin64\FtSysHk.dll
+0x000007fef97c0000 - 0x000007fef980a000 	c:\progra~2\ztedrm\drmagent\bin64\FtCtrFrm.dll
+0x000007fef9810000 - 0x000007fef9825000 	c:\progra~2\ztedrm\drmagent\bin64\FtOleCtr.dll
+0x000007feff6f0000 - 0x000007feff8ec000 	C:\Windows\system32\ole32.dll
+0x000007fef97a0000 - 0x000007fef97b2000 	c:\progra~2\ztedrm\drmagent\bin64\FtScrSft.dll
+0x000007fef9790000 - 0x000007fef979d000 	c:\progra~2\ztedrm\drmagent\bin64\FtWndInf.dll
+0x000007fef9760000 - 0x000007fef978f000 	c:\progra~2\ztedrm\drmagent\bin64\FtClpbrd.dll
+0x000007fef9680000 - 0x000007fef9699000 	c:\progra~2\ztedrm\drmagent\bin64\FtAgtLog.dll
+0x0000000065640000 - 0x0000000065712000 	C:\Program Files\Java\jdk1.8.0_91\jre\bin\msvcr100.dll
+0x000000005d920000 - 0x000000005e1b3000 	C:\Program Files\Java\jdk1.8.0_91\jre\bin\server\jvm.dll
+0x000007fef1b50000 - 0x000007fef1b59000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefda30000 - 0x000007fefda7d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefe0c0000 - 0x000007fefe0c8000 	C:\Windows\system32\NSI.dll
+0x000007fefab50000 - 0x000007fefab8b000 	C:\Windows\system32\WINMM.dll
+0x00000000777b0000 - 0x00000000777b7000 	C:\Windows\system32\PSAPI.DLL
+0x000000006c0f0000 - 0x000000006c0ff000 	C:\Program Files\Java\jdk1.8.0_91\jre\bin\verify.dll
+0x000000006b1a0000 - 0x000000006b1c9000 	C:\Program Files\Java\jdk1.8.0_91\jre\bin\java.dll
+0x00000000654a0000 - 0x00000000654c3000 	C:\Program Files\Java\jdk1.8.0_91\jre\bin\instrument.dll
+0x000000006a460000 - 0x000000006a476000 	C:\Program Files\Java\jdk1.8.0_91\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2017.2\lib\idea_rt.jar=56291:D:\Program Files\JetBrains\IntelliJ IDEA 2017.2\bin -Dfile.encoding=GBK 
+java_command: com.hbx.file.testet
+java_class_path (initial): C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;D:\myPlays\reduncan-github\mytest\production\hbx_text;D:\lib-jar\powermock-easymock-junit-1.5.4\cglib-nodep-2.2.2.jar;D:\lib-jar\powermock-easymock-junit-1.5.4\hamcrest-core-1.3.jar;D:\lib-jar\powermock-easymock-junit-1.5.4\javassist-3.20.0-GA.jar;D:\lib-jar\powermock-easymock-junit-1.5.4\junit-4.12.jar;D:\lib-jar\powermock-easymock-junit-1.5.4\mockito-all-1.10.19.jar;D:\lib-jar\powermock-easymock-junit-1.5.4\objenesis-2.1.jar;D:\lib-jar\powermock-easymock-junit-1.5.4\powermock-mockito-1.6.3-full.jar;D:\lib-jar\lib-cmicm\ant-1.6.5.jar;D:\lib-jar\lib-cmicm\backport-util-concurrent-3.0.jar;D:\lib-jar\lib-cmicm\castor-1.0.5-xml.jar;D:\lib-jar\lib-cmicm\castor-1.0.5.j
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files\Python35\Scripts\;C:\Program Files\Python35\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ZTEGuestOS\online;C:\Program Files (x86)\PVDrivers\tools;C:\Program Files\Git\cmd;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\McAfee\MOVE AV Client\
+USERNAME=10180885
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23796)
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 60 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, tsc, bmi1, bmi2
+
+Memory: 4k page, physical 8388060k(872036k free), swap 8386200k(5076k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.91-b15) for windows-amd64 JRE (1.8.0_91-b15), built on May 20 2016 17:43:15 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Nov 04 11:44:01 2017
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

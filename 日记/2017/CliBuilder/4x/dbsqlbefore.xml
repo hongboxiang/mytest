@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ini文件转换的格式描述-->
+<dbsqlbefore>	
+	<sql>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<much_ininame>BS</much_ininame>
+			<much_section>DB_Basic</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>count</much_handle>
+			<param>
+				<keyname>type</keyname>
+				<ininame>mssql</ininame>
+				<section>DB_Basic</section>
+				<nodetype>Attribute</nodetype>
+				<handle>const</handle>
+			</param>
+			<param>
+				<keyname>basic</keyname>
+				<ininame>BS</ininame>
+				<section>DB_Basic</section>
+				<handle>join1</handle>
+			</param>
+		</baseinfo>
+	</sql>
+	<sql>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<much_ininame>BS</much_ininame>
+			<much_section>DB_Basic</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>count</much_handle>
+			<param>
+				<keyname>type</keyname>
+				<ininame>oracle</ininame>
+				<section>DB_Basic</section>
+				<nodetype>Attribute</nodetype>
+				<handle>const</handle>
+			</param>
+			<param>
+				<keyname>basic</keyname>
+				<ininame>BSORA</ininame>
+				<section>DB_Basic</section>
+				<handle>join1</handle>
+			</param>
+		</baseinfo>
+	</sql>	
+    <sql>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<much_ininame>BS</much_ininame>
+			<much_section>DB_Basic</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>count</much_handle>
+			<param>
+				<keyname>type</keyname>
+				<ininame>sybase</ininame>
+				<section>DB_Basic</section>
+				<nodetype>Attribute</nodetype>
+				<handle>const</handle>
+			</param>
+			<param>
+				<keyname>basic</keyname>
+				<ininame>BSSYBASE</ininame>
+				<section>DB_Basic</section>
+				<handle>join1</handle>
+			</param>
+		</baseinfo>
+	</sql>
+	
+</dbsqlbefore>

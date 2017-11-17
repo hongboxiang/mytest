@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--ini文件转换的格式描述-->
+<departmentS>
+    <department>
+		<Name>平台</Name>
+		<Alias>UEP</Alias>
+		<Code>0</Code>
+		<Products>
+			<Product Code="00" Name="uep" Nameex="UEP" Alias="uep"/>
+		</Products>
+	</department>
+    
+	<department>
+		<Name>核心网</Name>
+		<Alias>CN</Alias>
+		<Code>1</Code>
+		<Products>
+			<Product Code="00" Name="BASE" Nameex="BASE" Alias="BASE"/>
+			<Product Code="01" Name="MSCE" Nameex="MSCE" Alias="MSCE"/>
+			<Product Code="02" Name="MGW" Nameex="MGW" Alias="MGW"/>		
+			<Product Code="10" Name="WCN" Nameex="CN" Alias="cn"/>
+			<Product Code="11" Name="Node" Nameex="NodeCN" Alias="node"/>
+			<Product Code="26" Name="CN_SGSN" Nameex="CN_SGSN" Alias="CN_SGSN"/>
+			<Product Code="27" Name="CN_GGSN" Nameex="CN_GGSN" Alias="CN_GGSN"/>
+			<Product Code="30" Name="CS" Nameex="CS" Alias="CS"/>
+			<Product Code="40" Name="ATCA_3GPlat" Nameex="ATCA_3GPlat" Alias="ATCA_3GPlat"/>
+			<Product Code="41" Name="ATCA_COMM" Nameex="ATCA_COMM" Alias="ATCA_COMM"/>
+			<Product Code="42" Name="ATCA_PSS" Nameex="ATCA_PSS" Alias="ATCA_PSS"/>
+			<Product Code="43" Name="ATCA_协议平台" Nameex="ATCA_协议平台" Alias="ATCA_协议平台"/>
+			<Product Code="60" Name="EMS" Nameex="EMS" Alias="EMS"/>
+			<Product Code="88" Name="IMS" Nameex="IMS" Alias="IMS"/>
+			<Product Code="89" Name="IMS2" Nameex="IMS2" Alias="IMS2"/>
+			<Product Code="99" Name="CAP" Nameex="CAP" Alias="CAP"/>			
+		</Products>
+	</department>
+	<department>
+		<Name>网络事业部</Name>
+		<Alias>N</Alias>
+		<Code>2</Code>
+		<Products>
+			<Product Code="10" Name="核心网" Nameex="CN" Alias="cn"/>
+			<Product Code="11" Name="Node" Nameex="NodeCN" Alias="node"/>			
+		</Products>
+	</department>
+	
+	<department>
+		<Name>本部事业部</Name>
+		<Alias>N</Alias>
+		<Code>3</Code>
+		<Products>						
+		</Products>
+	</department>
+	
+	<department>
+		<Name>数据事业部</Name>
+		<Alias>N</Alias>
+		<Code>5</Code>
+		<Products>			
+			<Product Code="11" Name="Node" Nameex="NodeCN" Alias="node"/>			
+		</Products>
+	</department>
+	
+	<department>
+		<Name>CDMA事业部</Name>
+		<Alias>N</Alias>
+		<Code>6</Code>
+		<Products>			
+			<Product Code="11" Name="Node" Nameex="NodeCN" Alias="node"/>			
+		</Products>
+	</department>
+	
+	<department>
+		<Name>移动事业部</Name>
+		<Alias>N</Alias>
+		<Code>8</Code>
+		<Products>			
+			<Product Code="00" Name="IMS" Nameex="IMS" Alias="node"/>
+			<Product Code="01" Name="CS" Nameex="CS" Alias="node"/>
+			<Product Code="02" Name="PS" Nameex="PS" Alias="node"/>
+			<Product Code="10" Name="GSM" Nameex="iOMCR" Alias="iOMCR"/>
+			<Product Code="11" Name="WOMC" Nameex="RNS" Alias="RNS"/>
+			<Product Code="12" Name="TDOMC" Nameex="RNS" Alias="RNS"/>
+			<Product Code="13" Name="BME" Nameex="RNS" Alias="RNS"/>
+			<Product Code="14" Name="TDOMC" Nameex="NodeB" Alias="NodeB"/>
+			<Product Code="15" Name="MUEP" Nameex="MUEP" Alias="MUEP"/>
+			<Product Code="16" Name="MINOS" Nameex="MINOS" Alias="MINOS"/>
+			<Product Code="17" Name="LTE" Nameex="RNS" Alias="RNS"/>
+			<Product Code="18" Name="UROP" Nameex="NodeB" Alias="NodeB"/>
+			<Product Code="19" Name="MAP" Nameex="MUEP" Alias="MUEP"/>
+			<Product Code="20" Name="MINOS4X" Nameex="MINOS4X" Alias="MINOS4X"/>
+			<Product Code="21" Name="LTEFLAT" Nameex="LTEFLAT" Alias="LTEFLAT"/>
+		</Products>
+	</department>
+	
+	<department>
+		<Name>综合网管</Name>
+		<Alias>N</Alias>
+		<Code>9</Code>
+		<Products>			
+			<Product Code="11" Name="Node" Nameex="NodeCN" Alias="node"/>			
+			<Product Code="99" Name="Test" Nameex="Test" Alias="node"/>
+		</Products>
+	</department>
+	
+</departmentS>

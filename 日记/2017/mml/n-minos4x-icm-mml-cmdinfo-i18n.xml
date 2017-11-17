@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<locales version="V1.0.1000">
+	<locale language-country="zh_CN">
+		<pair label-key="N-MINOS4X-ICM-mml-title" label-value="MINOS4X"/>
+		<pair label-key="N-MINOS4X-ICM-mml" label-value="MINOS4X-mml"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097" label-value="快配导入"/>
+		<pair label-key="N-MINOS4X-ICM-CmdBasic-8203097-helpexample" label-value="CM QUICK CONFIG:EXCELFILENAME=&quot;0&quot;,XMLZIPNAME=&quot;0&quot;,OMMBNAME=&quot;0&quot;;"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-Func" label-value="快配导入"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-0" label-value="EXCELFILENAME"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-1" label-value="XMLZIPNAME"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-2" label-value="OMMBNAME"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-3" label-value="扩展字段"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-OutParm-0" label-value="结果"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-OutParm-1" label-value="成功数目/总数目"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-OutParm-2" label-value="结果文件"/>
+	</locale>
+	<locale language-country="en_US">
+		<pair label-key="N-MINOS4X-ICM-mml-title" label-value="MINOS4X"/>
+		<pair label-key="N-MINOS4X-ICM-mml" label-value="MINOS4X-mml"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097" label-value="CM Quick Config"/>
+		<pair label-key="N-MINOS4X-ICM-CmdBasic-8203097-helpexample" label-value="CM QUICK CONFIG:EXCELFILENAME=&quot;0&quot;,XMLZIPNAME=&quot;0&quot;,OMMBNAME=&quot;0&quot;;"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-Func" label-value="CM Quick Config"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-0" label-value="EXCELFILENAME"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-1" label-value="XMLZIPNAME"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-2" label-value="OMMBNAME"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-InParm-3" label-value="Extends"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-OutParm-0" label-value="Result"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-OutParm-1" label-value="Statistics"/>
+		<pair label-key="N-MINOS4X-ICM-CmdNote-8203097-OutParm-2" label-value="ResultFile"/>
+	</locale>
+</locales>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<locales version="V1.0.1000">
+    <locale language-country="zh_CN">
+        <pair label-key="N-MINOS4X-ICM-ClsCode-8203-0" label-value="集中配置"/>
+        <pair label-key="N-MINOS4X-ICM-ClsCode-82030-1" label-value="无线配置应用"/>
+        <pair label-key="N-MINOS4X-ICM-Code-8203097-2" label-value="EMS查询X2Link"/>
+    </locale>
+    <locale language-country="en_US">
+        <pair label-key="N-MINOS4X-ICM-ClsCode-8203-0" label-value="ICM"/>
+        <pair label-key="N-MINOS4X-ICM-ClsCode-82030-1" label-value="Common Wireless Configuration Application"/>
+        <pair label-key="N-MINOS4X-ICM-Code-8203097-2" label-value="EMS Query X2Link"/>
+    </locale>
+</locales>

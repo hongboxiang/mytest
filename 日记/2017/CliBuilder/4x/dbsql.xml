@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ini文件转换的格式描述-->
+<dbsql>
+	<before>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<!--much true 时的结果取值   much_ininame代表取值字段 much_section代表取值片区 much_handle代表处理方式-->
+			<much_ininame>No</much_ininame>
+			<much_section>InParam</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>
+			<param>
+				<keyname>enable</keyname>
+				<ininame>BSStyle</ininame>
+				<section>DB_Basic</section>
+				<nodetype>Attribute</nodetype>
+			</param>			
+            <param>
+				<keyname>dbsqlbefore</keyname>
+				<!--节点描述 节点名称-->
+				<isNodeDes>true</isNodeDes>
+				<NodeDesFile>dbsqlbefore.xml</NodeDesFile>				
+				<isCreateNode>false</isCreateNode>
+			</param>			
+			
+		</baseinfo>
+	</before>
+	<exec>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<!--much true 时的结果取值   much_ininame代表取值字段 much_section代表取值片区 much_handle代表处理方式-->
+			<much_ininame>No</much_ininame>
+			<much_section>InParam</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>
+			<param>
+				<keyname>enable</keyname>
+				<ininame>BPStyle</ininame>
+				<section>DB_Basic</section>
+				<nodetype>Attribute</nodetype>
+			</param>
+			<param>
+				<keyname>dbsqlexec</keyname>
+				<!--节点描述 节点名称-->
+				<isNodeDes>true</isNodeDes>
+				<NodeDesFile>dbsqlexec.xml</NodeDesFile>				
+				<isCreateNode>false</isCreateNode>
+			</param>
+		</baseinfo>		
+	</exec>
+	<after>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<!--much true 时的结果取值   much_ininame代表取值字段 much_section代表取值片区 much_handle代表处理方式-->
+			<much_ininame>No</much_ininame>
+			<much_section>InParam</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>
+			<param>
+				<keyname>enable</keyname>
+				<ininame>ASStyle</ininame>
+				<section>DB_Basic</section>
+				<nodetype>Attribute</nodetype>
+			</param>
+			<param>
+				<keyname>dbsqlafter</keyname>
+				<!--节点描述 节点名称-->
+				<isNodeDes>true</isNodeDes>
+				<NodeDesFile>dbsqlafter.xml</NodeDesFile>				
+				<isCreateNode>false</isCreateNode>
+			</param>
+		</baseinfo>		
+	</after>
+	<return>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<!--much true 时的结果取值   much_ininame代表取值字段 much_section代表取值片区 much_handle代表处理方式-->
+			<much_ininame>No</much_ininame>
+			<much_section>InParam</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>
+			<param>
+				<keyname>enable</keyname>
+				<ininame>ProcStyle</ininame>
+				<section>DB_Basic</section>
+				<nodetype>Attribute</nodetype>
+			</param>
+			<param>
+				<keyname>dbsqlreturn</keyname>
+				<!--节点描述 节点名称-->
+				<isNodeDes>true</isNodeDes>
+				<NodeDesFile>dbsqlreturn.xml</NodeDesFile>				
+				<isCreateNode>false</isCreateNode>
+			</param>
+		</baseinfo>
+		
+	</return>
+</dbsql>

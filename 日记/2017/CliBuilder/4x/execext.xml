@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ini文件转换的格式描述-->
+<exec_ext>
+	<before>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<!--much true 时的结果取值   much_ininame代表取值字段 much_section代表取值片区 much_handle代表处理方式-->
+			<much_ininame>No</much_ininame>
+			<much_section>InParam</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>
+			<param>
+				<keyname>id</keyname>
+				<ininame>BpID</ininame>
+				<section>DB_Basic</section>
+			</param>
+			<param>
+				<keyname>type</keyname>
+				<ininame>BpType</ininame>
+				<section>DB_Basic</section>
+			</param>
+		</baseinfo>		
+	</before>
+	<after>
+		<baseinfo>
+			<xmlsection>basic</xmlsection>
+			<much>false</much>
+			<!--much true 时的结果取值   much_ininame代表取值字段 much_section代表取值片区 much_handle代表处理方式-->
+			<much_ininame>No</much_ininame>
+			<much_section>InParam</much_section>
+			<!--取值:value 数目:count 缺省为取值 -->
+			<much_handle>value</much_handle>
+			<param>
+				<keyname>id</keyname>
+				<ininame>ApID</ininame>
+				<section>DB_Basic</section>
+			</param>
+			<param>
+				<keyname>type</keyname>
+				<ininame>ApType</ininame>
+				<section>DB_Basic</section>
+			</param>
+		</baseinfo>		
+	</after>
+</exec_ext>

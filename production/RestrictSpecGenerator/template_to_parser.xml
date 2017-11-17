@@ -1,0 +1,5 @@
+<root>
+	<mapping name="fdd_model_template" template="moModel"/>
+	<mapping name="tdd_model_template" template="moModel"/>
+	<mapping name="plat_model_template" template="moModel"/>
+</root>

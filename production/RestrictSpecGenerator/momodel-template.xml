@@ -1,0 +1,15 @@
+<template name="moModel" sheet="MO属性" extends="" model="ProductModel" parser="excel">
+	<column name="mocName" label_zh="对象名" extends=""/>
+	<column name="attrName" label_zh="对象属性名" extends=""/>
+	<column name="property" label_zh="属性性质
+I初始化
+P持久化
+R可读取
+W可修改
+N通知" extends=""/>
+	<column name="attrDesc" label_zh="属性的中文名称" label_en="属性的英文名称" extends=""/>
+	<column name="detailDesc" label_zh="详细描述(中文)" label_en="详细描述(英文)" extends=""/>
+	<column name="type" label_zh="取值类型" extends=""/>
+	<column name="unit" label_zh="单位" extends=""/>
+	<column name="unit" label_zh="设备缺省值" extends=""/>
+</template>
