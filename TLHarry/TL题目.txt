@@ -1,0 +1,66 @@
+Harry Potter :
+
+To try and encourage more sales of the 5 different Harry
+Potter books they sell, a bookshop has decided to offer
+discounts of multiple-book purchases.
+
+One copy of any of the five books costs 8 EUR.
+
+If, however, you buy two different books, you get a 5%
+discount on those two books.
+
+If you buy 3 different books, you get a 10% discount.
+
+If you buy 4 different books, you get a 20% discount.
+
+If you go the whole hog, and buy all 5, you get a huge 25%
+discount.
+
+Note that if you buy, say, four books, of which 3 are
+different titles, you get a 10% discount on the 3 that
+form part of a set, but the fourth book still costs 8 EUR.
+
+Your mission is to write a piece of code to calculate the
+price of any conceivable shopping basket (containing only
+Harry Potter books), giving as big a discount as possible.
+
+For example, how much does this basket of books cost?
+
+2 copies of the first book
+2 copies of the second book
+2 copies of the third book
+1 copy of the fourth book
+1 copy of the fifth book
+
+Answer: 51.20 EUR
+
+
+以前，有一套描述一个叫哈利的英国英雄的小说，共5本（在这个练习提出时，还只有5本），
+让全世界的小朋友们都为之着迷，当然，出版商也是。
+
+所以从提供优惠（同时提高销量）的角度出发，出版商提出了如下的折扣计算方法：
+
+5本书中的任意一本标价8欧元。
+如果你买了5本书中不同的两本，两本书都将有5%的优惠；
+如果你买了3本不同的书，你将获得10%的优惠；
+买了4本不同的数，将有20%的优惠；
+如果你买了全套的5本书，你将有25%的优惠。
+如果你买了4本书，其中3本是不同的，那么那三本不同的书将有10%的优惠，但重复的那一本则没有优惠。
+
+现在的任务是写一段代码供书店来计算价格，给出尽可能大的折扣。
+
+例如，对于以下的购书清单：
+2本第一部。
+2本第二部。
+2本第三部。
+1本第四部。
+1本第五部。
+
+答案是：51.20 EUR
+
+
+
+题目要求：
+1、功能要正确，单元测试设计合理，覆盖所有的场景
+2、代码尽可能CC
+3、相比算法实现的高效，我们更看重你的面向对象设计能力
