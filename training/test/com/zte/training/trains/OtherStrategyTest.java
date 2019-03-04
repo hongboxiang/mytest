@@ -17,7 +17,7 @@ import static org.junit.Assert.assertEquals;
 public class OtherStrategyTest {
     List graphList;
     @org.junit.Before
-    public void setUp() throws Exception {
+    public void setUp() throws FException {
         graphList = Arrays.asList("AB5", "BC4", "CD8", "DC8", "DE6", "AD5", "CE2", "EB3", "AE7");
     }
 

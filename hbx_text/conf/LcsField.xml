@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Objects>
+	<Mo Moc="EUtranCellTDDLTE"  FileName="EUtranCellTDD">
+		<FieldList>
+			<FieldName>SubNetwork</FieldName>
+			<FieldName>MEID</FieldName>
+			<FieldName>ENBFunction</FieldName>
+			<FieldName>EUtranCellTDDLTE</FieldName>
+			<FieldName>userLabel</FieldName>
+			<FieldName>alias</FieldName>
+			<FieldName>buildPhyLocation</FieldName>
+			<FieldName>pci</FieldName>
+			<FieldName internalName="urgencyeai" def="4294967295">
+				<ShowName>eai01</ShowName>
+				<ShowName>eai02</ShowName>
+				<ShowName>eai03</ShowName>
+				<ShowName>eai04</ShowName>
+				<ShowName>eai05</ShowName>
+				<ShowName>eai06</ShowName>
+				<ShowName>eai07</ShowName>
+				<ShowName>eai08</ShowName>
+				<ShowName>eai09</ShowName>
+				<ShowName>eai10</ShowName>
+				<ShowName>eai11</ShowName>
+				<ShowName>eai12</ShowName>
+				<ShowName>eai13</ShowName>
+				<ShowName>eai14</ShowName>
+				<ShowName>eai15</ShowName>
+				<ShowName>eai16</ShowName>
+			</FieldName>		
+			<FieldName>tac</FieldName>
+			<FieldName>earfcn</FieldName>
+			<FieldName>latitude</FieldName>
+			<FieldName>longitude</FieldName>
+			<FieldName>adminState</FieldName>
+		</FieldList>
+	</Mo>
+	<Mo Moc="EUtranCellFDDLTE"  FileName="EUtranCellFDD">
+		<FieldList>
+			<FieldName>SubNetwork</FieldName>
+			<FieldName>MEID</FieldName>
+			<FieldName>ENBFunction</FieldName>
+			<FieldName>EUtranCellFDDLTE</FieldName>
+			<FieldName>userLabel</FieldName>
+			<FieldName>alias</FieldName>
+			<FieldName>buildPhyLocation</FieldName>
+			<FieldName>pci</FieldName>
+			<FieldName internalName="urgencyeai" def="4294967295">
+				<ShowName>eai01</ShowName>
+				<ShowName>eai02</ShowName>
+				<ShowName>eai03</ShowName>
+				<ShowName>eai04</ShowName>
+				<ShowName>eai05</ShowName>
+				<ShowName>eai06</ShowName>
+				<ShowName>eai07</ShowName>
+				<ShowName>eai08</ShowName>
+				<ShowName>eai09</ShowName>
+				<ShowName>eai10</ShowName>
+				<ShowName>eai11</ShowName>
+				<ShowName>eai12</ShowName>
+				<ShowName>eai13</ShowName>
+				<ShowName>eai14</ShowName>
+				<ShowName>eai15</ShowName>
+				<ShowName>eai16</ShowName>
+			</FieldName>		
+			<FieldName>tac</FieldName>
+			<FieldName>earfcnDl</FieldName>
+			<FieldName>latitude</FieldName>
+			<FieldName>longitude</FieldName>
+			<FieldName>adminState</FieldName>
+		</FieldList>
+	</Mo>
+	<Mo Moc="Plmn"  FileName="Plmn">
+		<FieldList>
+		        <FieldName>MOI</FieldName>
+			<FieldName>SubNetwork</FieldName>
+			<FieldName>MEID</FieldName>
+			<FieldName>Operator</FieldName>
+			<FieldName>Plmn</FieldName>
+			<FieldName>userLabel</FieldName>		
+			<FieldName>mcc</FieldName>
+			<FieldName>mnc</FieldName>
+		</FieldList>
+	</Mo>
+</Objects>

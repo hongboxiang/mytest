@@ -1,23 +1,19 @@
 package com.hbx.collection.list;
 
-import java.util.Arrays;
+import java.security.SecureRandom;
 
 /**
  * Created on 2017/10/31
  */
 public class testshuzu {
     public static void main(String[] args) {
-        int[] bookBusket = {7, 6, 7, 1, 5};
-        calBestPrice(bookBusket);
-        System.out.println(bookBusket[0]);
+        SecureRandom secureRandom = new SecureRandom();
+        System.out.println(secureRandom.nextInt());
     }
 
-    public static void calBestPrice(int[] bookBusket) {
-        int[] sorted;
-//        for(int part : bookBusket){
-//            sorted.
-//        }
-//        int[] sorted = bookBus;
-//        Arrays.sort(sorted);
+    public static String calBestPrice(String newValue) {
+        newValue = newValue.replaceAll("0+$", "");
+        newValue = newValue.replaceAll("\\.$", "");
+        return newValue;
     }
 }

@@ -13,6 +13,8 @@ public class mapTraversalDemo {
         map.put("1","ÂÀ²¼");
         map.put("2", "¹ØÓğ");
         map.put("3", "ÕÅ·É");
+        map.get("dd");
+        System.out.println(map.get("dd"));
         traversal1(map);
         traversal2(map);
     }

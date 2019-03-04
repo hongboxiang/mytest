@@ -15,7 +15,7 @@ public class StaxDemo {
         XMLInputFactory factory = XMLInputFactory.newInstance();
         XMLStreamReader reader = factory
                 .createXMLStreamReader(new FileInputStream(new File(
-                        "src/font.xml")));
+                        "./conf/LcsField.xml")));
         // 第二部：迭代处理
         while (reader.hasNext()) {
             int event = reader.next();

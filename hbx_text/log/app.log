@@ -1,0 +1,9 @@
+2018-07-19 11:02:39,026 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【呼叫警报中心】：09:00使用电话
+2018-07-19 11:02:39,030 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【发送紧急事态通知】：09:00使用警铃
+2018-07-19 11:02:39,030 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【记录】：09:00操作金库使用按钮
+2018-07-19 11:02:39,121 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【呼叫警报中心留言电话】：12:00使用电话
+2018-07-19 11:02:39,122 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【发送紧急事态通知】：12:00使用警铃
+2018-07-19 11:02:39,122 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【发送紧急事态通知】：12:00操作金库使用按钮
+2018-07-19 11:02:39,123 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【呼叫警报中心留言电话】：23:59使用电话
+2018-07-19 11:02:39,124 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【发送紧急事态通知】：23:59使用警铃
+2018-07-19 11:02:39,124 INFO  [main] [com.pattarn.strategy.alarm.common.AlarmCenter] - 【发送紧急事态通知】：23:59操作金库使用按钮
