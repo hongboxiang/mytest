@@ -1,7 +1,6 @@
 package com.dirmanage.context;
 
 import lombok.Getter;
-import lombok.NonNull;
 import lombok.Setter;
 
 /**
@@ -10,8 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class DirContext {
-    @NonNull
-    private String saveDir;
+    public static String saveDir;
+    public static String deleteDir;
+    public static int hourOfDay;
 
     private static class DirContextHolder {
         private volatile static DirContext dirContext = new DirContext();

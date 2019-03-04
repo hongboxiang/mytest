@@ -1,1 +1,3 @@
 saveDir=./
+deleteDir=./workDir
+hour_of_day=1

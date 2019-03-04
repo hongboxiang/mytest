@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_workdirmanage" default="compile.module.workdirmanage">
+  <dirname property="module.workdirmanage.basedir" file="${ant.file.module_workdirmanage}"/>
+  
+  <property name="module.jdk.home.workdirmanage" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.workdirmanage" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.workdirmanage" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.workdirmanage" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="workdirmanage.output.dir" value="${module.workdirmanage.basedir}/target/classes"/>
+  <property name="workdirmanage.testoutput.dir" value="${module.workdirmanage.basedir}/target/test-classes"/>
+  
+  <path id="workdirmanage.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="workdirmanage.module.production.classpath">
+    <path refid="${module.jdk.classpath.workdirmanage}"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.25.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.25.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:5.4.2.final.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.1.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.3.0.final.classpath"/>
+    <path refid="library.maven:_com.fasterxml:classmate:1.3.1.classpath"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.16.4.classpath"/>
+  </path>
+  
+  <path id="workdirmanage.runtime.production.module.classpath">
+    <pathelement location="${workdirmanage.output.dir}"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.25.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.25.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:5.4.2.final.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.1.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.3.0.final.classpath"/>
+    <path refid="library.maven:_com.fasterxml:classmate:1.3.1.classpath"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.16.4.classpath"/>
+  </path>
+  
+  <path id="workdirmanage.module.classpath">
+    <path refid="${module.jdk.classpath.workdirmanage}"/>
+    <pathelement location="${workdirmanage.output.dir}"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.25.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.25.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:5.4.2.final.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.1.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.3.0.final.classpath"/>
+    <path refid="library.maven:_com.fasterxml:classmate:1.3.1.classpath"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.16.4.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-module-junit4:1.6.5.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-module-junit4-common:1.6.5.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-core:1.6.5.classpath"/>
+    <path refid="library.maven:_org.javassist:javassist:3.20.0-ga.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-reflect:1.6.5.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-api-mockito:1.6.5.classpath"/>
+    <path refid="library.maven:_org.mockito:mockito-core:1.10.19.classpath"/>
+    <path refid="library.maven:_org.objenesis:objenesis:2.1.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-api-mockito-common:1.6.5.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-api-support:1.6.5.classpath"/>
+  </path>
+  
+  <path id="workdirmanage.runtime.module.classpath">
+    <pathelement location="${workdirmanage.testoutput.dir}"/>
+    <pathelement location="${workdirmanage.output.dir}"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.25.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.25.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-validator:5.4.2.final.classpath"/>
+    <path refid="library.maven:_javax.validation:validation-api:1.1.0.final.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.3.0.final.classpath"/>
+    <path refid="library.maven:_com.fasterxml:classmate:1.3.1.classpath"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.16.4.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-module-junit4:1.6.5.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-module-junit4-common:1.6.5.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-core:1.6.5.classpath"/>
+    <path refid="library.maven:_org.javassist:javassist:3.20.0-ga.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-reflect:1.6.5.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-api-mockito:1.6.5.classpath"/>
+    <path refid="library.maven:_org.mockito:mockito-core:1.10.19.classpath"/>
+    <path refid="library.maven:_org.objenesis:objenesis:2.1.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-api-mockito-common:1.6.5.classpath"/>
+    <path refid="library.maven:_org.powermock:powermock-api-support:1.6.5.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.workdirmanage">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.workdirmanage">
+    <patternset refid="excluded.from.module.workdirmanage"/>
+  </patternset>
+  
+  <path id="workdirmanage.module.sourcepath">
+    <dirset dir="${module.workdirmanage.basedir}">
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="workdirmanage.module.test.sourcepath">
+    <dirset dir="${module.workdirmanage.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.workdirmanage" depends="compile.module.workdirmanage.production,compile.module.workdirmanage.tests" description="Compile module workDirManage"/>
+  
+  <target name="compile.module.workdirmanage.production" depends="register.custom.compilers" description="Compile module workDirManage; production classes">
+    <mkdir dir="${workdirmanage.output.dir}"/>
+    <javac2 destdir="${workdirmanage.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.workdirmanage}/javac">
+      <compilerarg line="${compiler.args.workdirmanage}"/>
+      <bootclasspath refid="workdirmanage.module.bootclasspath"/>
+      <classpath refid="workdirmanage.module.production.classpath"/>
+      <src refid="workdirmanage.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.workdirmanage"/>
+    </javac2>
+    
+    <copy todir="${workdirmanage.output.dir}">
+      <fileset dir="${module.workdirmanage.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.workdirmanage.tests" depends="register.custom.compilers,compile.module.workdirmanage.production" description="compile module workDirManage; test classes" unless="skip.tests">
+    <mkdir dir="${workdirmanage.testoutput.dir}"/>
+    <javac2 destdir="${workdirmanage.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.workdirmanage}/javac">
+      <compilerarg line="${compiler.args.workdirmanage}"/>
+      <bootclasspath refid="workdirmanage.module.bootclasspath"/>
+      <classpath refid="workdirmanage.module.classpath"/>
+      <src refid="workdirmanage.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.workdirmanage"/>
+    </javac2>
+    
+    <copy todir="${workdirmanage.testoutput.dir}">
+      <fileset dir="${module.workdirmanage.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.workdirmanage" description="cleanup module">
+    <delete dir="${workdirmanage.output.dir}"/>
+    <delete dir="${workdirmanage.testoutput.dir}"/>
+  </target>
+</project>
