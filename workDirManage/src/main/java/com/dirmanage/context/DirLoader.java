@@ -2,9 +2,7 @@ package com.dirmanage.context;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.FileInputStream;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.Properties;
 
 import static com.dirmanage.common.DirConst.DIR_PROP;
@@ -20,13 +18,12 @@ public class DirLoader {
     public static final String HOUR_OF_DAY = "hour_of_day";
 
     public static void load(){
-        FileInputStream fileInputStream = null;
         try {
-            fileInputStream = new FileInputStream(DIR_PROP);
+            InputStream in = new BufferedInputStream(new FileInputStream(DIR_PROP));
             File file = new File("./");
             file.getAbsoluteFile();
             Properties properties = new Properties();
-            properties.load(fileInputStream);
+            properties.load(new InputStreamReader(in, "utf-8"));
             DirContext.saveDir = properties.getProperty(SAVE_DIR);
             DirContext.deleteDir = properties.getProperty(DELETE_DIR);
             DirContext.hourOfDay = Integer.valueOf(properties.getProperty(HOUR_OF_DAY));

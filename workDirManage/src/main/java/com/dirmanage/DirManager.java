@@ -3,6 +3,7 @@ package com.dirmanage;
 import com.dirmanage.context.DirContext;
 import com.dirmanage.context.DirLoader;
 import com.dirmanage.timer.DirTimerTask;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.Timer;
 /**
  * Created on 19-3-4
  */
+@Slf4j
 public class DirManager {
     static {
         DirLoader.load();
@@ -30,6 +32,7 @@ public class DirManager {
     }
 
     public static void main(String[] args) {
+        log.info("DirManager startup.");
         dirTransfer();
     }
 }

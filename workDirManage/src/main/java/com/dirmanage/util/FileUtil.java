@@ -1,17 +1,25 @@
 package com.dirmanage.util;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.*;
 import java.nio.channels.FileChannel;
 
 /**
  * Created on 19-3-4
  */
+@Slf4j
 public class FileUtil {
 
     // 移动文件夹的方法,开始的时候是两个文件夹
-    public static void moveDir(String source, String destin) throws IOException {
-        copyFile(source, destin);
-        deleteDir(source);
+    public static void moveDir(String source, String destin){
+        try {
+            copyFile(source, destin);
+            deleteDir(source);
+        } catch (IOException e) {
+            log.error("movefile failed", e);
+        }
+
     }
     // 复制文件夹的方法,开始的时候是两个文件夹
     public static void copyFile(String source, String destin) throws IOException {
