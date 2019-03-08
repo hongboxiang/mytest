@@ -20,7 +20,7 @@ public class DirManager {
 
     public static void dirTransfer(){
         Date time = getTime();
-        new Timer().schedule(new DirTimerTask(), time);
+        new Timer().schedule(new DirTimerTask(), time, 24*60*60*1000);
     }
 
     private static Date getTime() {

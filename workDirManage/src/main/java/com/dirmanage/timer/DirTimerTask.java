@@ -16,7 +16,7 @@ public class DirTimerTask extends TimerTask {
     @Override
     public void run() {
         log.info("Start clean.");
-        LocalDate today = LocalDate.now().minusDays(1);
+        LocalDate today = LocalDate.now();
         String desDir = DirContext.saveDir + File.separator + today.getYear()
                 + File.separator + today.getMonthValue() + "月" + File.separator
                         + today.getDayOfMonth();
